@@ -1,16 +1,8 @@
 package com.transmuda.step_definitions;
 
-import com.transmuda.pages.BasePage;
 import com.transmuda.pages.LoginPage;
 import com.transmuda.utilities.ConfigurationReader;
-import com.transmuda.utilities.Driver;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 
 public class LoginStepDefs {
 
@@ -47,20 +39,13 @@ public class LoginStepDefs {
         loginPage.login(username,password);
     }
 
+
     @Given("the user logged in as {string}  as {string}")
     public void the_user_logged_in_as_as(String username, String password) {
         LoginPage loginPage=new LoginPage();
         loginPage.login(username,password);
 
-
-
-
-
     }
-
-
-
-
 
 
 }

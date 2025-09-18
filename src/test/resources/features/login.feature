@@ -9,17 +9,18 @@ Feature: Users should be able to login
   @wip
   Scenario Outline: Verify login with different user types
     Given the user logged in as "<userType>"  as "<userpassword>"
-    #Given the user logged in with username as "User1" and password as "UserUser123"
-   # Given the user logged in with username as "storemanager51" and password as "UserUser123"
-    #Given the user logged in with username as "salesmanager101" and password as "UserUser123"
-
 
     Examples: search values we are going to use
 
       | userType        | userpassword |
-      #| User10          | UserUser123  |
       | storemanager59  | UserUser123  |
       | salesmanager109 | UserUser123  |
+
+  #Scenario Outline: Verify login with different user types
+   # Given the user logged in as "<userType>"  as "<userpassword>"
+    #When user can check the first checkbox to select all the cars
+  #  Then user can select any car
+    #Examples: search values we are going to use
 
 
 
