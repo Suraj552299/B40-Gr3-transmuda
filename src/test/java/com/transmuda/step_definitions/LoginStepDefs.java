@@ -2,7 +2,9 @@ package com.transmuda.step_definitions;
 
 import com.transmuda.pages.LoginPage;
 import com.transmuda.utilities.ConfigurationReader;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 
 public class LoginStepDefs {
 
@@ -37,8 +39,6 @@ public class LoginStepDefs {
       LoginPage loginPage=new LoginPage();
       loginPage.login(username,password);
     }
-
-
 
 
 
